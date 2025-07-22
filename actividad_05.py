@@ -12,12 +12,17 @@ while True:
 
     option = input("Ingresa una opción del menú por favor: ")
 
+    # Inicio de match
     match option:
         case 1:
+            n = int(input("Ingresa la cantidad de datos dentro del listado de ventas"))
+            # Ciclo for dato de variables
+            for i in range(0, n+1):
+                venta = input("Ingresa el dato de la venta (números enteros positivos)")
+                if venta > '0':
+                    ventas.append(venta)
+                    print("Dat de venta ingresado correctamente.")
+                else:
+                    print("El dato no es valido")
 
-            venta = input("Ingresa el listado de venta (números enteros positivos)")
-            if venta > '0':
-                ventas.append(venta)
-            else:
-                print("El dato no es valido")
         case 2:
